@@ -8,9 +8,20 @@ public class Lifecounter : MonoBehaviour
     public static int countervida = 200;
     public Text vida;
 
-    // Update is called once per frame
+    void Start()
+    {
+        vida.enabled = true;
+    }
+
     void Update()
     {
-        vida.text = (countervida.ToString());
+        if (countervida > 0)
+        { 
+            vida.text = ("Vida: " + countervida.ToString() + "/200");
+        }
+        else
+        {
+            vida.enabled = false;
+        }
     }
 }

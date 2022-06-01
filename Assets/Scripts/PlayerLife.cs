@@ -13,7 +13,8 @@ public class PlayerLife : MonoBehaviour
     void Start()
     {
         gameOver.enabled = false;
-        
+        camara.SetActive(false);
+
     }
     void Update()
     {
@@ -31,8 +32,9 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
+            player.SetActive(false);
             gameOver.enabled = true;
-            camara.transform.position = new Vector3(100, 100, 100);
+            camara.SetActive(true);
         }
 
     }

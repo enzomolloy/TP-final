@@ -9,8 +9,20 @@ public class CoinDestroy : MonoBehaviour
     public static int countercoin;
     public Text lbl;
 
+    void Start()
+    {
+        lbl.enabled = true;
+    }
+
     void Update()
     {
-        lbl.text = ("Monedas: " + countercoin.ToString());
+        if (Lifecounter.countervida > 0)
+        {
+            lbl.text = ("Monedas: " + countercoin.ToString());
+        }
+        else
+        {
+            lbl.enabled = false;
+        }
     }
 }
