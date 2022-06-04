@@ -10,13 +10,14 @@ public class Lifecounter : MonoBehaviour
 
     void Start()
     {
-        vida.enabled = true;
+        
     }
 
     void Update()
     {
         if (countervida > 0)
-        { 
+        {
+            vida.enabled = true;
             vida.text = ("Vida: " + countervida.ToString() + "/200");
         }
         else
@@ -25,3 +26,4 @@ public class Lifecounter : MonoBehaviour
         }
     }
 }
+

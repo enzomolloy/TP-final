@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Coins
   - Etext
+  - kill
   layers:
   - Default
   - TransparentFX

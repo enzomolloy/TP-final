@@ -7,12 +7,16 @@ public class CollectCoin : MonoBehaviour
     public GameObject coin;
 
     void OnCollisionEnter(Collision col)
-    {
+    { 
         if (col.gameObject.name == "Player")
         {
             CoinDestroy.countercoin++;
-            Destroy(coin);
+            coin.SetActive(false);
         }
+    }
+    public void botonns()
+    {
+        coin.SetActive(true);
     }
 }
 
