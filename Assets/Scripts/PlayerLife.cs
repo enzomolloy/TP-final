@@ -11,6 +11,7 @@ public class PlayerLife : MonoBehaviour
     public GameObject boton;
     public Text won;
     public GameObject helpc;
+    public static int ganar;
 
     void Start()
     {
@@ -18,7 +19,6 @@ public class PlayerLife : MonoBehaviour
         gameOver.enabled = false;
         camara.SetActive(false);
         boton.SetActive (false);
-
     }
     void Update()
     {
@@ -32,8 +32,12 @@ public class PlayerLife : MonoBehaviour
 
             transform.position = new Vector3(0, -5, -30);
          }
-         
 
+         if (helpc.transform.position.y < -30)
+         {
+           Lifecounter.countervida -= 200;
+           transform.position = new Vector3(0, -5, -30);
+         }
         }
         else
         {
@@ -54,6 +58,8 @@ public class PlayerLife : MonoBehaviour
             camara.SetActive(true);
             boton.SetActive(true);
             transform.position = new Vector3(0, -5, -30);
+            ganar += 1;
+           
         }
     }
 
@@ -79,6 +85,8 @@ public class PlayerLife : MonoBehaviour
         Lifecounter.countervida = 200;
         CoinDestroy.countercoin = 0;
         helpc.transform.position = new Vector3(-8.95f, 16.01f, 34.43f);
+        Timer.customTime = 0;
+        ganar = 0;
     }
  
 }

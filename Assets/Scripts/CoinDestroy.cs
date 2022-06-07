@@ -8,13 +8,14 @@ public class CoinDestroy : MonoBehaviour
 
     public static int countercoin;
     public Text lbl;
+    public GameObject player;
 
     void Update()
     {
-        if (Lifecounter.countervida > 0)
+        if (Lifecounter.countervida > 0 && PlayerLife.ganar == 0)
         {
             lbl.enabled = true;
-            lbl.text = ("Monedas: " + countercoin.ToString());
+            lbl.text = ("Monedas: " + countercoin.ToString() + "/8");
         }
         else
         {
@@ -22,3 +23,4 @@ public class CoinDestroy : MonoBehaviour
         }
     }
 }
+

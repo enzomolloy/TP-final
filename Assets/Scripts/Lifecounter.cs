@@ -15,7 +15,7 @@ public class Lifecounter : MonoBehaviour
 
     void Update()
     {
-        if (countervida > 0)
+        if (countervida > 0 && PlayerLife.ganar == 0)
         {
             vida.enabled = true;
             vida.text = ("Vida: " + countervida.ToString() + "/200");
