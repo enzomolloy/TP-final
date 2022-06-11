@@ -12,6 +12,7 @@ public class PlayerLife : MonoBehaviour
     public Text won;
     public GameObject helpc;
     public static int ganar;
+    public AudioManager Am;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class PlayerLife : MonoBehaviour
          if (transform.position.y < -10)
          {
             Lifecounter.countervida -= 100;
-
+            Am.PlayClip1();
             transform.position = new Vector3(0, -5, -30);
          }
 
@@ -41,6 +42,7 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
+            Am.PlayClip3();
             player.SetActive(false);
             gameOver.enabled = true;
             camara.SetActive(true);
@@ -53,6 +55,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (col.gameObject.name == "WinPlatform")
         {
+            Am.PlayClip6();
             player.SetActive(false);
             won.enabled = true;
             camara.SetActive(true);
@@ -68,6 +71,7 @@ public class PlayerLife : MonoBehaviour
         if (col.gameObject.name == "kill")
         {
             Lifecounter.countervida -= 20;
+            Am.PlayClip4();
         }
         if (Lifecounter.countervida <= 0)
         {

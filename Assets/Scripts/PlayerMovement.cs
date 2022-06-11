@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     float shift;
     int hasJump;
     Rigidbody rb;
+    public AudioManager Am;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             hasJump--;
+            Am.PlayClip2();
         }
         if (Input.GetKey(KeyCode.LeftShift) && hasJump == maxJumps)
         {
