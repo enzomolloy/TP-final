@@ -32,11 +32,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(0, 0, -movementSpeed);
         }
-        if (Input.GetKey(KeyCode.D) && hasJump == maxJumps)
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Rotate(0, rotationSpeed, 0);
         }
-        if (Input.GetKey(KeyCode.A) && hasJump == maxJumps)
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(0, -rotationSpeed, 0);
         }
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             hasJump--;
             Am.PlayClip2();
         }
-        if (Input.GetKey(KeyCode.LeftShift) && hasJump == maxJumps)
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.W) && hasJump == maxJumps)
         {
             transform.Translate(0, 0, shift);
         }

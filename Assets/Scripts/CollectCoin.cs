@@ -20,5 +20,6 @@ public class CollectCoin : MonoBehaviour
     {
         coin.SetActive(true);
     }
+
 }
 
