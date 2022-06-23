@@ -1,60 +1,25 @@
 fileFormatVersion: 2
-guid: 20329f268de82c949a4f95ef3261baec
+guid: 6154dab9eba4a984d8adea1b22b90599
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Adelante
-    100002: Atras
-    100004: Lado 1
-    100006: Lado2
-    100008: //RootNode
-    400000: Adelante
-    400002: Atras
-    400004: Lado 1
-    400006: Lado2
-    400008: //RootNode
+    100000: //RootNode
+    400000: //RootNode
     2100000: Paleta
-    2100002: Paleta.002
-    2100004: Paleta.003
-    2100006: Paleta.004
-    2300000: Adelante
-    2300002: Atras
-    2300004: Lado 1
-    2300006: Lado2
-    3300000: Adelante
-    3300002: Atras
-    3300004: Lado 1
-    3300006: Lado2
-    4300000: Adelante
-    4300002: Atras
-    4300004: Lado2
-    4300006: Lado 1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Win
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Paleta
-    second: {fileID: 2100000, guid: 3865032b36b3da14193760abe628f147, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta.002
-    second: {fileID: 2100000, guid: b61338dc58e507c4b954bf1b0076d7d4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta.003
-    second: {fileID: 2100000, guid: 4e5ced4f5a5c1a0479291f278efb6c7a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta.004
-    second: {fileID: 2100000, guid: 1ceba579e8115f9459ca4414296ca4c3, type: 2}
+    second: {fileID: 2100000, guid: 0e5feaab31fbb494e9cdb0c6349d7bd4, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: lH8yTHvm
-    second: {fileID: 2800000, guid: dbc4bcb50fb5c23489d6ad0f126581be, type: 3}
+    second: {fileID: 2800000, guid: d3db315aafd029a4cbc74e1819ba62b8, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

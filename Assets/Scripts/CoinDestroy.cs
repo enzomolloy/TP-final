@@ -15,7 +15,7 @@ public class CoinDestroy : MonoBehaviour
         if (Lifecounter.countervida > 0 && PlayerLife.ganar == 0)
         {
             lbl.enabled = true;
-            lbl.text = ("Monedas: " + countercoin.ToString() + "/8");
+            lbl.text = ("Monedas: " + countercoin.ToString() + "/9");
         }
         else
         {
